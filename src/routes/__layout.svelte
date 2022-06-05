@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '../app.css';
+	import "../app.css";
 	import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@rgossiaux/svelte-headlessui';
 </script>
 
@@ -27,3 +27,5 @@
 		>
 	</TabPanels>
 </TabGroup>
+
+

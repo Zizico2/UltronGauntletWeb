@@ -11,6 +11,7 @@ specifiers:
   eslint-config-prettier: ^8.3.0
   eslint-plugin-svelte3: ^4.0.0
   open-props: ^1.3.16
+  postcss-custom-media: ^8.0.2
   postcss-jit-props: ^1.0.7
   prettier: ^2.5.1
   prettier-plugin-svelte: ^2.5.0
@@ -31,6 +32,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.17.0
   eslint-plugin-svelte3: 4.0.0_3aft6623ti3qaietkx5ojwfh2e
   open-props: 1.3.16
+  postcss-custom-media: 8.0.2
   postcss-jit-props: 1.0.7
   prettier: 2.6.2
   prettier-plugin-svelte: 2.7.0_kkjbqzpydplecjtkxrgomroeru
@@ -1684,6 +1686,15 @@ packages:
     hasBin: true
     dev: true
 
+  /postcss-custom-media/8.0.2:
+    resolution: {integrity: sha512-7yi25vDAoHAkbhAzX9dHx2yc6ntS4jQvejrNcC+csQJAXjj15e7VcWfMgLqBNAbOvqi5uIa9huOVwdHbf+sKqg==}
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.3
+    dependencies:
+      postcss-value-parser: 4.2.0
+    dev: true
+
   /postcss-jit-props/1.0.7:
     resolution: {integrity: sha512-qxt6FxbBwTsHDMhzoTclrT0muWCSF0iT6TfCBssj5MYB0Txx1c6r27OKqjxlg9oE+ubEbrlN1VYmOPiBMtzhow==}
     engines: {node: '>=10.0.0'}
@@ -1691,6 +1702,10 @@ packages:
       postcss: ^8.2.8
     dependencies:
       tiny-glob: 0.2.9
+    dev: true
+
+  /postcss-value-parser/4.2.0:
+    resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
     dev: true
 
   /postcss/8.4.14:

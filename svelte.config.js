@@ -2,6 +2,7 @@ import adapter from '@sveltejs/adapter-auto';
 import preprocess from 'svelte-preprocess';
 import postcssJitProps from 'postcss-jit-props';
 import OpenProps from 'open-props';
+import postcssCustomMedia from 'postcss-custom-media';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -14,7 +15,7 @@ const config = {
 		vite: {
 			css: {
 				postcss: {
-					plugins: [postcssJitProps(OpenProps)]
+					plugins: [postcssJitProps(OpenProps), postcssCustomMedia()]
 				}
 			}
 		}
